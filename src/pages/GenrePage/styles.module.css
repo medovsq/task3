@@ -1,0 +1,49 @@
+.location { 
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 51px;
+
+}
+.header{
+    height: 67px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.headerText{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.genreDiv{
+    width: 15%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80vh;
+    margin-right: 20px;
+    border-radius: 8px;
+    position: sticky;
+
+
+}
+
+.buttonStyle{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    background: transparent;
+    float: left;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.backgraund{
+    background-color: #E9E9E9;
+    height: 100vh;
+}
