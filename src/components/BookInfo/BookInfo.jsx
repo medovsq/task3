@@ -1,7 +1,5 @@
 import { Book } from "../Book/Book"
-import styles from './styles.module.css'
 import React, { useState } from 'react'
-// import {Link} from 'react-router-dom'
 import { BookPage } from '../../pages/BookPage/BookPage';
 
 
@@ -19,7 +17,7 @@ export const Books = ({books}) => {
     return <div>
         <ul className={styles.list}>
             {
-                books.map((book) => <li className={styles.listElement} key={book.id}>
+                books.map((book) => <li key={book.id}>
                     <Book book={book} handleClickProperBook={handleClickProperBook}/>
                     </li>)
             }

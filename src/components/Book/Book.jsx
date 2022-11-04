@@ -2,10 +2,10 @@ import { useState } from "react"
 import styles from './styles.module.css'
 
 
-export const Book = ({book}) => {
+export const Book = ({ book, handleClickProperBook }) => {
     const [count, setCount] = useState(0)
     return <div className={styles.root}>
-        <div>
+        <div onClick={() => handleClickProperBook(book)}>
         <h4 className={styles.nameBook}>{book.name}</h4>
         <div className={styles.text}>{book.author}</div>
         <div className={styles.text}>{book.bookGenre}</div>

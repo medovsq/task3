@@ -1,25 +1,27 @@
-import {Genre} from './../../components/Genre/Genre'
-import {useState} from 'react'
+import { Genre } from './../../components/Genre/Genre'
+import { useState } from 'react'
 import styles from './styles.module.css'
-import { BookPage } from '../BookPage/BookPage';
 
 
-export const  GenrePage = (props) => {
-    const [activeGenre, setActiveGenre] = useState(props.genres[0]);
-    
+
+export const GenrePage = ({properBook, setProperBook, genres}) => {
+    const [activeGenre, setActiveGenre] = useState(genres[0]);
+    console.log(properBook, setProperBook(), 'GenrePage')
+
     // const bookReview = activeGenre.books
 
 
     return <div className={styles.backgraund}>
-        <header className={styles.header}><p className={styles.headerText}>Магазин</p></header>
+        <header className={styles.header}>
+            <p className={styles.headerText}>Магазин</p>
+        </header>
         <main className={styles.location}>
-        <div className={styles.genreDiv}>
-            {
-                props.genres.map((genre) => <button className={styles.buttonStyle} key={genre.id} onClick={() => setActiveGenre(genre)}>{genre.name}</button>)
-            }
-        </div>
-        <Genre genres={activeGenre}/>
-        <BookPage activeGenre={activeGenre}/>
+            <div className={styles.genreDiv}>
+                {
+                    genres.map((genre) => <button className={styles.buttonStyle} key={genre.id} onClick={() => setActiveGenre(genre)}>{genre.name}</button>)
+                }
+            </div>
+            <Genre genres={activeGenre}  />
         </main>
         {/* <div>
             <h3>reviews</h3>
