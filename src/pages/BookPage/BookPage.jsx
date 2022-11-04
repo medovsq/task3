@@ -1,14 +1,23 @@
 import { Book } from "../../components/Book/Book";
+import styles from './styles.module.css'
+import {Link} from 'react-router-dom'
+import {BookReview} from './../../components/BookReview/BookReview'
 
 
 export const BookPage = ({ properBook }) => {
     const book = properBook;
     console.log(book)
-    return <div>
-        <div>
+    return <div className={styles.backgraund}>
+        <header className={styles.header}>
+            <Link className={styles.linkStyle} to='/'> <p className={styles.headerText}>Магазин</p></Link>
+        </header>
+        <div className={styles.bookInfo}>
             <Book book={properBook} />
-            <div><h2>Анотация</h2>
+            <div className={styles.bookInfoText}><h2>Анотация</h2>
                 <p>{properBook.about}</p></div>
+        </div>
+        <div className={styles.bookReviewDivStyles}>
+            <BookReview book={properBook}/>
         </div>
 
 

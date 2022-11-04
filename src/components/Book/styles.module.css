@@ -17,6 +17,13 @@
     font-size: 20px;
 
 }
+
+.nameBook:hover{
+    opacity: 60%;
+    transition: 0.4s; 
+    cursor: pointer;
+}
+
 .text{
     color: black;
     opacity: 0.5;
@@ -44,6 +51,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.buttonCount:hover{
+  
+    cursor: pointer;
+}
+
 .buttonCount:disabled{
     background-color: black;
     opacity: 0.5;

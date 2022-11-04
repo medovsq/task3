@@ -1,0 +1,49 @@
+.backgraund{
+    background-color: #E9E9E9;
+    height: 100%;
+    padding-bottom: 20px;
+
+}
+
+.bookInfo{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 51px;
+    margin-bottom: 30px;
+}
+
+.header{
+    height: 67px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    
+}
+.headerText{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.bookInfoText{
+    border-radius: 8px;
+    background-color: white;
+    width: 60vw;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+.linkStyle{
+    text-decoration: none;
+}
+
+.bookReviewDivStyles{
+    padding-right: 40px;
+}
