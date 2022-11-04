@@ -6,7 +6,8 @@ import styles from './styles.module.css'
 
 export const GenrePage = ({properBook, setProperBook, genres}) => {
     const [activeGenre, setActiveGenre] = useState(genres[0]);
-    console.log(properBook, setProperBook(), 'GenrePage')
+    console.log(properBook, setProperBook, 'GenrePage')
+
 
     // const bookReview = activeGenre.books
 
@@ -21,7 +22,7 @@ export const GenrePage = ({properBook, setProperBook, genres}) => {
                     genres.map((genre) => <button className={styles.buttonStyle} key={genre.id} onClick={() => setActiveGenre(genre)}>{genre.name}</button>)
                 }
             </div>
-            <Genre genres={activeGenre}  />
+            <Genre genres={activeGenre} properBook={properBook} setProperBook={setProperBook}  />
         </main>
         {/* <div>
             <h3>reviews</h3>

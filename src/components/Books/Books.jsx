@@ -6,15 +6,14 @@ import { BookPage } from '../../pages/BookPage/BookPage';
 
 
 
-export const Books = ({books}) => {
+export const Books = ({books, properBook, setProperBook}) => {
 
-    const [properBook, setProperBook] = useState(books[0])
+    // const [properBook, setProperBook] = useState(books[0])
 
     const handleClickProperBook = (book) => {
         setProperBook(book);
     }
 
-    console.log(properBook);
 
     return <div>
         <ul className={styles.list}>
@@ -24,7 +23,5 @@ export const Books = ({books}) => {
                     </li>)
             }
         </ul>
-
-        <BookPage propBook={properBook} />
     </div>
     }
