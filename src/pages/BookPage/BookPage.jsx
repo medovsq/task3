@@ -1,24 +1,24 @@
 import { Book } from "../../components/Book/Book";
 
 
-export const BookPage = ({ propBook }) => {
-    console.log(propBook)
-    const book = propBook;
+export const BookPage = ({ properBook }) => {
+    const book = properBook;
+    console.log(book)
     return <div>
         <div>
-            <Book book={book} />
+            <Book book={properBook} />
             <div><h2>Анотация</h2>
-                <p>{book.about}</p></div>
+                <p>{properBook.about}</p></div>
         </div>
 
 
         <div className="review-container">
             <ul className="review-list">
-                {book.reviews.map((item) => (
+                {/* {book.reviews.map((item) => (
                     <li key={item.id} className="review-list__review">
                         {item.text}
                     </li>
-                ))}
+                ))} */}
             </ul>
         </div>
     </div>
